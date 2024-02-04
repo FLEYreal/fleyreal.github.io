@@ -4,42 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
     <title>Resume</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+        }
+
+        body {
+            width: 992px;
+            height: 1403px;
+            color: #6e6e6e;
+            margin: auto;
+            padding: 32px 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .name {
+            color: #000000;
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 1.25px;
+            word-spacing: 2px;
+            margin: 0;
+        }
+
+        .prof {
+            color: #535353;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-top: 16px;
+        }
+
+        .left-section {
+            flex: 5;
+            margin-right: 48px;
+        }
+
+        .right-section {
+            flex: 2;
+        }
+
+        .title {
+            color: #000000;
+            margin: 2px 0;
+            font-weight: 600;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        .subtitle {
+            color: #535353;
+            margin: 4px 0;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .text {
+            font-weight: 500;
+            font-size: 19px;
+            margin: 2px 0;
+            margin-bottom: 18px;
+        }
+
+        .timespan {
+            font-size: 18px;
+            color: #acacac;
+        }
+
+        .section {
+            margin-bottom: 42px;
+            margin-top: 24px;
+        }
+
+        .inside-section {
+            margin-bottom: 18px;
+            margin-top: 8px;
+        }
+
+        .employment-item {
+            margin-bottom: 46px;
+        }
+
+        .description {
+            margin-top: 16px;
+            width: 65%;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
         <h1 class="name">Nikita Borisov</h1>
-        <h3 class="prof">Junior Fullstack Developer</h3>
+        <h3 class="prof">Junior Full-stack Developer</h3>
+        <p class="text description">
+            Passionate full-stack developer with a two-year track record crafting marketable and high-performance
+            applications. Eager to explore new technologies!
+        </p>
     </header>
     <main>
         <section class="left-section">
 
-            <section class="profile-section section">
-
+            <section class="section">
                 <h2 class="title">
-                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="36px"
-                        viewBox="0 0 24 24" width="36px" fill="#af95ff">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
-                        <path
-                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" />
+                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px">
+                        <g>
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                        </g>
+                        <g>
+                            <path
+                                d="m12 17.27 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
+                        </g>
                     </svg>
-                    Profile
+                    Portfolio
                 </h2>
                 <p class="text">
-                    Passionate fullstack developer crafting sellable and performant apps for <b>2 years</b>.
-                    Eager to learn new technologies since <b>July 2021!</b>
+                    All public projects are available on my
+                    <a href="https://github.com/FLEYreal">Github</a>!
                 </p>
-
             </section>
 
             <section class="employment-section section">
 
                 <h2 class="title">
                     <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="36px"
-                        viewBox="0 0 24 24" width="36px" fill="#af95ff">
+                        viewBox="0 0 24 24" width="36px">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
                             d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
@@ -50,14 +154,20 @@
                 <article class="employment-item">
 
                     <section class="inside-section">
-                        <h2 class="subtitle">HatBuilders at Junior Fullstack, Remote</h2>
-                        <span class="timespan">Novermber 2023 - Present</span>
+                        <h2 class="subtitle">HatBuilders at Junior Full-stack, Remote</h2>
+                        <span class="timespan">November 2023 - Present</span>
                     </section>
                     <section class="inside-section" style="margin-left: 38px;">
-                        <li class="text">Entirely Coded Frontend with <b>NextJS</b> & <b>Material-UI</b>.</li>
-                        <li class="text">Coded Backend with <b>Python</b> / <b>FastAPI</b>.</li>
-                        <li class="text">Working on Telegram & Discord bots with <b>AI integration</b>.</li>
-                        <li class="text">Worked with <b>React Query</b> to link backend and i18n for translations.</li>
+                        <li class="text">
+                            Designed a high-performance, SEO-optimized landing page for the business, successfully
+                            attracting new clients to the project's website!
+                        </li>
+                        <li class="text">
+                            Currently, implementing AI-driven Telegram and Discord bots to enhance client interaction
+                            and
+                            provide project information during support gaps. Ongoing work involves integrating these
+                            bots into the backend ecosystem for seamless operation.
+                        </li>
                     </section>
 
                 </article>
@@ -65,19 +175,18 @@
                 <article class="employment-item">
 
                     <section class="inside-section">
-                        <h2 class="subtitle">CodeWave at Junior Fullstack, Remote</h2>
+                        <h2 class="subtitle">CodeWave at Junior Full-stack, Remote</h2>
                         <span class="timespan">October 2022 - November 2023</span>
                     </section>
                     <section class="inside-section" style="margin-left: 38px;">
                         <li class="text">
-                            We'd been working on <b>event-oriented</b> architecture for Backend with <b>NodeJS</b>.
+                            Faced with performance issues and through strategic implementation of lazy loading,
+                            memoization, and code optimization, I achieved substantial performance growth by reducing
+                            LCP from 6 to 2.5 seconds.
                         </li>
                         <li class="text">
-                            Made Frontend with <b>React</b> & <b>Material-UI</b>.
-                        </li>
-                        <li class="text">
-                            Worked with incredible team of 3 fullstack developers and a designer, got
-                            <b>experienced at working in team</b> and with GitHub.
+                            Enhanced purely written codebase with documentation, decomposition and typescript
+                            implementation to reduce entry level for the project.
                         </li>
                     </section>
 
@@ -91,60 +200,26 @@
                     </section>
                     <section class="inside-section" style="margin-left: 38px;">
                         <li class="text">
-                            Made a Social Network for Footballers with <b>React</b> & <b>Tailwind</b>
+                            Spearheaded the development of a dynamic Social Network for Footballers utilizing React and
+                            Tailwind, showcasing adept proficiency in front-end technologies.
                         </li>
                         <li class="text">
-                            Worked on Discord / Telegram bots in <b>Python / NodeJS</b> for different needs such
-                            as support, donations, spam bots and so on.
+                            Applied expertise in Python and NodeJS to design and implement multi-functional Discord and
+                            Telegram bots, addressing diverse requirements including support, donations, and mitigating
+                            spam.
                         </li>
                         <li class="text">
-                            Improved Online Store made with <b>NextJS</b>, added admin panel and dark theme.
+                            Elevated an Online Store built with NextJS by incorporating an efficient admin panel and
+                            implementing a visually appealing dark theme, contributing to an enhanced user experience.
                         </li>
                         <li class="text">
-                            Created website for Wordpress' plugin with React and <b>Tailwind</b>.</li>
-                        <li class="text">
-                            Created website for a gaming Minecraft server.
+                            Crafted a website tailored for a WordPress plugin, seamlessly blending React and Tailwind to
+                            achieve a polished and user-friendly interface.
                         </li>
                     </section>
 
                 </article>
 
-            </section>
-
-            <section class="section">
-                <h2 class="title">
-                    <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg"
-                        enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="36px" fill="#af95ff">
-                        <g>
-                            <path d="M0 0h24v24H0V0z" fill="none" />
-                            <path d="M0 0h24v24H0V0z" fill="none" />
-                        </g>
-                        <g>
-                            <path
-                                d="m12 17.27 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z" />
-                        </g>
-                    </svg>
-                    Portfolio
-                </h2>
-                <p class="subtitle">
-                    All public projects are available on my
-                    <a href="https://github.com/FLEYreal">Github</a>!
-                </p>
-                <p class="text" style="margin-top: 16px;">Here's an example of what I've made:</p>
-                <section style="margin-left: 38px; display: flex;">
-                    <section style="width: 250px;">
-                        <li class="text">ChatGPT-Clone</li>
-                        <li class="text">Browser-Home</li>
-                        <li class="text">Blog</li>
-                        <li class="text">Checkers</li>
-                    </section>
-                    <section style="width: 250px;">
-                        <li class="text">Discord Mailer</li>
-                        <li class="text">Video Player</li>
-                        <li class="text">Chat Application</li>
-                        <li class="text">Game 2048</li>
-                    </section>
-                </section>
             </section>
 
         </section>
@@ -155,10 +230,10 @@
             </section>
             <section class="section">
                 <h2 class="subtitle">Links</h2>
-                <a href="https://github.com/FLEYreal" target="_blank" class="text">
+                <a href="https://github.com/FLEYreal" target="_blank" class="text" style="text-decoration: none;">
                     Github : FLEYreal
                 </a><br />
-                <a href="https://t.me/Nikita1264" class="text" target="_blank">
+                <a href="https://t.me/Nikita1264" class="text" target="_blank" style="text-decoration: none;">
                     Telegram : @Nikita1264
                 </a>
             </section>
@@ -169,13 +244,12 @@
                 <p class="text" style="margin-top: 10px;">MUI / Tailwind / Shadcn-UI</p>
                 <p class="text" style="margin-top: 10px;">NodeJS / ExpressJS</p>
                 <p class="text" style="margin-top: 10px;">Python / FastAPI</p>
-                <p class="text" style="margin-top: 10px;">MySQL / Postres / Mongo</p>
+                <p class="text" style="margin-top: 10px;">MySQL / PostreSQL</p>
                 <p class="text" style="margin-top: 10px;">Git / GitHub / Docker</p>
                 <p class="text" style="margin-top: 10px;">Nginx / Apache</p>
-                <p class="text" style="margin-top: 10px;">Webpack / Vite</p>
                 <p class="text" style="margin-top: 10px;">Figma / Photoshop</p>
                 <p class="text" style="margin-top: 10px;">MVC / FSD</p>
-                <p class="text" style="margin-top: 10px;">SOLID / DRY / KISS</p>
+                <p class="text" style="margin-top: 10px;">Webpack / Vite</p>
             </section>
             <section class="section">
                 <h2 class="subtitle">Languages</h2>
